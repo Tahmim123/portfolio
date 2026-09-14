@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /tmp/redact)",
+      "Read(//tmp/**)",
+      "Bash(npm init *)",
+      "Bash(timeout 90 npm install mupdf)",
+      "Bash(echo \"exit=$?\")"
+    ]
+  }
+}

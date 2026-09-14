@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sheikh Tahmim Mehdi — Software Engineer & AI Researcher</title>
+  <meta name="description" content="Sheikh Tahmim Mehdi — software engineer and independent AI researcher focused on efficient and deployable LLMs and VLMs, retrieval, and model evaluation.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:,"><!-- TODO: add a favicon in assets/ -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       STICKY TOP NAV
+       ============================================================ -->
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav__inner">
+      <a class="site-nav__name" href="#intro">Sheikh Tahmim Mehdi</a>
+      <ul class="site-nav__links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main" class="container">
+
+    <!-- ============================================================
+         SECTION 1 — HEADER / INTRO
+         ============================================================ -->
+    <header class="section intro" id="intro">
+      <h1>Sheikh Tahmim Mehdi</h1>
+
+      <p class="intro__lede">
+        <strong>Software engineer and independent AI researcher</strong>,
+        focused on efficient and deployable LLMs and VLMs, retrieval, and
+        model evaluation.
+      </p>
+
+      <ul class="link-row">
+        <li>
+          <a href="mailto:tahmim.mehdi@gmail.com">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M2 4l6 4.5L14 4"/></svg>
+            Email
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mehditahmim" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .2a8 8 0 00-2.5 15.6c.4.1.5-.2.5-.4v-1.4c-2 .4-2.5-.5-2.7-1 0-.1-.5-.9-.8-1.1-.3-.2-.7-.6 0-.6.6 0 1 .6 1.2.9.7 1.2 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8a7.4 7.4 0 014 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 1.9.1 2.1.5.5.8 1.2.8 2.1 0 3.1-1.9 3.8-3.6 4 .3.3.6.8.6 1.6v2.3c0 .2.1.5.5.4A8 8 0 008 .2z"/></svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <!-- TODO: add your Google Scholar OR ResearchGate URL (pick whichever you keep updated) -->
+          <a href="#" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M8 1L1 5l7 4 7-4-7-4z"/><path d="M4 7v3c0 1 1.8 2 4 2s4-1 4-2V7"/></svg>
+            Google Scholar
+          </a>
+        </li>
+        <li>
+          <!-- TODO: add your LinkedIn URL -->
+          <a href="#" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.4 5H.9v9h2.5V5zM2.1 1a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM15 9.5C15 7 13.6 5.8 11.8 5.8c-1.2 0-2 .7-2.3 1.3V5H7v9h2.5V9.2c0-1 .6-1.6 1.4-1.6.8 0 1.3.6 1.3 1.6V14H15V9.5z"/></svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- ============================================================
+         SECTION 2 — RESEARCH (headliner: RE-SciVQA)
+         ============================================================ -->
+    <section class="section" id="research" aria-labelledby="research-h">
+      <p class="section__label">Research</p>
+
+      <p class="research__statement">
+        My research focuses on making large language and vision&ndash;language
+        models efficient and practical to deploy &mdash; drawing strong
+        capability from compact models through parameter-efficient fine-tuning,
+        and grounding their outputs in retrieved evidence rather than relying on
+        scale alone. The direction I most want to pursue in graduate study is
+        <strong>memory optimization for retrieval-augmented generation</strong>:
+        reducing the memory footprint of RAG systems so that retrieval-grounded
+        models stay efficient and deployable in practice.
+        <!-- Optional: you can add one more sentence in your own voice on *why*
+             this problem matters to you — it further strengthens the statement. -->
+      </p>
+
+      <h2 class="research__title" id="research-h">
+        RE-SciVQA: Retrieval-Augmented Scientific Visual Question Answering
+      </h2>
+      <p class="research__meta">
+        <!-- TODO: add venue/year and author list if you want them shown, e.g. "Authors — Venue, Year" -->
+        Scientific Visual Question Answering over figures and text from academic papers.
+      </p>
+
+      <p>
+        RE-SciVQA pairs a compact multimodal model with a retrieval-augmented
+        pipeline to answer questions about scientific figures. To improve
+        efficiency, I fine-tuned a compact 4B multimodal model with QLoRA,
+        reaching accuracy competitive with larger 7&ndash;8B models at a
+        smaller footprint. The model is paired with a retrieval-augmented
+        pipeline that uses query expansion to surface relevant context from
+        academic papers before answering.
+      </p>
+
+      <ul class="tags" aria-label="Methods and tools">
+        <li>Vision-Language Models</li>
+        <li>QLoRA fine-tuning</li>
+        <li>4B multimodal model</li>
+        <li>Retrieval-augmented generation</li>
+        <li>Query expansion</li>
+        <li>Model evaluation</li>
+      </ul>
+
+      <p class="actions">
+        <a href="https://drive.google.com/file/d/12EsB04WCMowGueCqIAvUCoiBi8AMC_Tm/view?usp=sharing"
+           target="_blank" rel="noopener">Read the paper &rarr;</a>
+      </p>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — SELECTED PROJECTS
+         Ordered by prominence: headliner -> supporting -> foundational
+         ============================================================ -->
+    <section class="section" id="projects" aria-labelledby="projects-h">
+      <h2 class="section__label" id="projects-h">Selected projects</h2>
+
+      <!-- ---------- Headliner tier ---------- -->
+      <div class="tier">
+        <p class="tier__label">Headliner</p>
+
+        <article class="project project--headliner">
+          <h3 class="project__title">Production RAG for coding conventions</h3>
+          <p>
+            A retrieval-augmented system over scattered coding-convention
+            documents, giving developers a single place to ask how the team
+            does things. Built with a distilled Qwen 2.5 model and deployed on
+            Google Cloud Platform. It was widely adopted by developers and
+            improved their productivity.
+          </p>
+          <ul class="tags" aria-label="Tech stack">
+            <li>Retrieval-augmented generation</li>
+            <li>Qwen 2.5 (distilled)</li>
+            <li>Google Cloud Platform</li>
+            <li>LLM serving</li>
+          </ul>
+          <figure class="project__shot">
+            <img src="assets/images/manifestoRag.jpeg"
+                 alt="The manifestoGPT chat interface answering a developer's question about implementing Gitleaks, with the response grounded in and citing a source document from the team's coding-convention corpus."
+                 loading="lazy" width="1024" height="559">
+            <figcaption>The assistant answering a developer question, grounded in the team's convention docs (note the cited source document).</figcaption>
+          </figure>
+        </article>
+
+        <article class="project project--headliner">
+          <h3 class="project__title">DevSecOps / security automation</h3>
+          <p>
+            Security automation across the delivery pipeline. I built an
+            automated vulnerability-alert pipeline that pulls from feed APIs and
+            uses webhooks to push new vulnerability alerts to Slack, so the team
+            hears about issues as they surface. I also integrated OWASP
+            Dependency-Track into CI to scan SBOMs and flag critical
+            dependencies on new builds.
+          </p>
+          <ul class="tags" aria-label="Tech stack">
+            <li>OWASP Dependency-Track</li>
+            <li>SBOM scanning</li>
+            <li>CI/CD integration</li>
+            <li>Webhooks</li>
+            <li>Slack alerts</li>
+            <li>Feed APIs</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- ---------- Supporting tier ---------- -->
+      <div class="tier">
+        <p class="tier__label">Supporting</p>
+
+        <article class="project project--supporting">
+          <h3 class="project__title">Automated student attendance (final-year capstone)</h3>
+          <div class="project__aside">
+            <div class="project__aside__body">
+              <p>
+                A complete end-to-end Android application for classroom
+                attendance: the teacher photographs the class and submits it to
+                the system, which detects and recognizes each student's face to
+                mark attendance. As shown in the architecture diagram, the
+                pipeline uses MTCNN for face detection and a FaceNet model for
+                128-dimensional face embeddings, with a Support Vector
+                Classifier matching each detected face against enrolled
+                students.
+              </p>
+              <ul class="tags" aria-label="Tech stack">
+                <li>Android</li>
+                <li>MTCNN (face detection)</li>
+                <li>FaceNet embeddings</li>
+                <li>Support Vector Classifier</li>
+                <li>Client&ndash;server</li>
+              </ul>
+              <!-- Details above are drawn from the author's architecture diagram and the
+                   project README (Android app; "take a photo of the class and submit it to
+                   the system"). TODO: confirm MTCNN/FaceNet/SVC match the implementation and
+                   that recognition is server-backed rather than on-device. -->
+              <figure class="project__shot">
+                <!-- TODO: this JPEG is ~2 MB — compress to < 200 KB for faster load. -->
+                <a href="assets/images/automated_attendance.jpeg" target="_blank" rel="noopener" aria-label="Open the full-size architecture diagram in a new tab">
+                  <img src="assets/images/automated_attendance.jpeg"
+                       alt="Architecture of the attendance system. Phase 1 (enrollment): a student image is passed through a FaceNet model to produce 128 features that train a Support Vector Classifier stored in a classifier database. Phase 2 (inference): a class group photo is processed by MTCNN for face detection, the detected face crops go through FaceNet for 128-feature extraction, and the SVC matches each face to produce the final attendance list."
+                       loading="lazy" width="1024" height="576">
+                </a>
+                <figcaption>System architecture: enrollment/training and inference. Click to enlarge.</figcaption>
+              </figure>
+            </div>
+            <figure class="project__shot project__shot--aside">
+              <a href="assets/images/classroom_attendance.png" target="_blank" rel="noopener" aria-label="Open the full-size app screenshot in a new tab">
+                <img src="assets/images/classroom_attendance.png"
+                     alt="The Android attendance app after capturing a class photo: detected students are listed by anonymized student ID and marked present (green) or absent (red)."
+                     loading="lazy" width="372" height="682">
+              </a>
+              <figcaption>The running app: present (green) / absent (red). Click to enlarge.</figcaption>
+            </figure>
+          </div>
+          <p class="actions">
+            <a href="https://github.com/mehditahmim/Automated-attendance-using-face-recognitiion" rel="noopener">View the repository &rarr;</a>
+          </p>
+        </article>
+      </div>
+
+      <!-- ---------- Foundational tier ---------- -->
+      <div class="tier">
+        <p class="tier__label">Foundational</p>
+
+        <article class="project project--foundational">
+          <h3 class="project__title">Santander Customer Transaction Prediction</h3>
+          <p>
+            A machine-learning coursework project (team of 3) on an imbalanced
+            binary classification task over tabular banking data. Because the
+            classes are imbalanced, we report <strong>AUC</strong> rather than
+            accuracy. The best model was XGBoost at
+            <!-- Verified against ML_Report.pdf (North South University, 2019):
+                 the report uses AUC as its metric and states XGBoost 0.89,
+                 Random Forest 0.83, neural network 0.85. The repo README's "92%"
+                 is accuracy, which we intentionally do not report here. -->
+            <strong>0.89 AUC</strong>,
+            with Random Forest at 0.83 AUC and a simple PyTorch neural network at
+            0.85 AUC. The work emphasized proper handling of class imbalance,
+            feature engineering (outlier removal, scaling, per-row statistics,
+            and binning), and k-fold cross-validation.
+          </p>
+          <ul class="tags" aria-label="Tech stack">
+            <li>XGBoost</li>
+            <li>Random Forest</li>
+            <li>PyTorch</li>
+            <li>Imbalanced classification</li>
+            <li>Feature engineering</li>
+            <li>k-fold cross-validation</li>
+          </ul>
+          <figure class="project__shot">
+            <!-- TODO: this JPEG is ~2.2 MB — compress to < 200 KB for faster load. -->
+            <img src="assets/images/santander_pipeline.jpeg"
+                 alt="Diagram of the XGBoost pipeline: data preprocessing (outlier removal, min-max scaling, binning), a sequential decision-tree ensemble, and a probability/target prediction output."
+                 loading="lazy" width="1000" height="524">
+          </figure>
+          <p class="actions">
+            <a href="https://github.com/mehditahmim/CSE445-ML_Customer_transaction_prediction" rel="noopener">View the repository &rarr;</a>
+            <a href="assets/ML_Report.pdf" rel="noopener">Project report (PDF) &rarr;</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — EXPERIENCE
+         ============================================================ -->
+    <section class="section" id="experience" aria-labelledby="experience-h">
+      <h2 class="section__label" id="experience-h">Experience</h2>
+
+      <div class="job">
+        <div class="job__head">
+          <h3 class="job__title">
+            Software Engineer, <span class="job__company">WellDev</span>
+          </h3>
+          <span class="job__dates">Feb 2022 &ndash; Present</span>
+        </div>
+        <ul class="job__bullets">
+          <li>
+            Designed and deployed a retrieval-augmented generation system for
+            querying internal coding standards and conventions (distilled model,
+            deployed on GCP; adopted across the engineering team).
+          </li>
+          <li>
+            Built a notification service to identify and report vulnerable
+            dependencies, strengthening application security.
+          </li>
+          <li>
+            Led migration of a legacy system to a modular monolith, improving
+            maintainability and scalability.
+          </li>
+          <li>
+            Designed a rate-limiting system for core services to improve API
+            reliability and prevent overload.
+          </li>
+        </ul>
+        <p class="job__stack"><strong>Stack:</strong> Java, Spring Boot, Hibernate, Python, GCP, Docker.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — ABOUT / CONTACT
+         ============================================================ -->
+    <section class="section" id="about" aria-labelledby="about-h">
+      <h2 class="section__label" id="about-h">About</h2>
+
+      <p>
+        I'm a software engineer with about four and a half years of professional
+        experience, currently at WellDev, where I work on Java and Spring Boot
+        backend systems alongside applied AI and security-automation projects.
+        Outside of that work, I pursue independent AI research focused on making
+        large language and vision&ndash;language models more efficient and
+        practical to deploy.
+      </p>
+
+      <p>
+        My interests center on efficient and deployable LLMs and VLMs,
+        retrieval-augmented systems, and model evaluation &mdash; most recently
+        <a href="#research">RE-SciVQA</a>, which pairs a compact,
+        QLoRA-fine-tuned multimodal model with a retrieval pipeline for
+        scientific visual question answering. I'm now looking to pursue graduate
+        study to work on these problems more deeply.
+        <!-- TODO: tailor this to your applications — e.g. target degree (PhD/MS),
+             the specific research directions you want to emphasize, and any labs
+             or areas of interest. Keep it honest and specific. -->
+      </p>
+
+      <!-- TODO: (optional) add an education line or its own section, e.g.
+           "B.Sc. in <field>, North South University, <years>." Provide the exact
+           degree, field, and dates and I'll add them — nothing is assumed here. -->
+
+      <p class="about__contact">
+        The best way to reach me is by email at
+        <a href="mailto:tahmim.mehdi@gmail.com">tahmim.mehdi@gmail.com</a>.
+        My GitHub, Google Scholar, and LinkedIn profiles are linked at the
+        <a href="#intro">top of the page</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="container section">
+    <p style="color: var(--color-ink-muted); font-size: 0.85rem;">
+      © <span data-current-year>2026</span> Sheikh Tahmim Mehdi.
+      Built as a static site, hosted on GitHub Pages.
+    </p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

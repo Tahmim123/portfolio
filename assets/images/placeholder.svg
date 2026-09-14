@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Screenshot placeholder">
+  <rect width="800" height="450" fill="#eef2f7"/>
+  <rect x="0.5" y="0.5" width="799" height="449" fill="none" stroke="#c9d4e0" stroke-dasharray="6 6"/>
+  <g fill="#6b7a8c" font-family="Georgia, serif" text-anchor="middle">
+    <text x="400" y="215" font-size="26">Screenshot placeholder</text>
+    <text x="400" y="250" font-size="16" fill="#8a97a6">TODO: replace with a real screenshot</text>
+  </g>
+</svg>
