@@ -1,0 +1,7 @@
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+
+# Unused asset containing sensitive internal data — must NOT be published.
+# (OWASP Dependency-Track dashboard showing an employer's live vulnerability counts.)
+assets/images/dependency_tracl.png
