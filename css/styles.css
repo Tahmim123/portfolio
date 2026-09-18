@@ -186,14 +186,13 @@ code, kbd { font-family: var(--font-mono); font-size: 0.9em; }
    ========================================================================== */
 
 .research__statement {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: var(--color-ink-soft);
   max-width: var(--measure);
   margin: 0 0 var(--space-6);
   padding-left: var(--space-3);
   border-left: 3px solid var(--color-accent);
 }
+.research__statement p { margin-bottom: var(--space-3); }
+.research__statement p:last-child { margin-bottom: 0; }
 .research__statement strong { color: var(--color-ink); font-weight: 650; }
 
 .research__title { margin-bottom: var(--space-2); }
