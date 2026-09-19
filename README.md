@@ -66,6 +66,16 @@ The `.nojekyll` file ensures GitHub Pages serves the files verbatim instead of
 running them through Jekyll (harmless here, but avoids surprises with any files
 that start with an underscore).
 
+## Analytics
+
+Page-view stats are collected via **Cloudflare Web Analytics** — a cookieless,
+privacy-friendly beacon loaded in `<head>` of `index.html`. No consent banner is
+required. View the dashboard at
+[dash.cloudflare.com](https://dash.cloudflare.com) → **Web Analytics**. It tracks
+the whole `tahmim123.github.io` hostname; filter by the `/portfolio/` path to
+isolate this site. To disable, remove the `<!-- Cloudflare Web Analytics -->`
+block from `index.html`.
+
 ## Editing content
 
 All page content lives in `index.html`, organized into commented sections
